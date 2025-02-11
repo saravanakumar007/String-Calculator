@@ -46,12 +46,12 @@ void main() {
       expect(getSumResult('-1'), 'negative numbers not allowed : -1');
     });
 
-    test('Test - Muplitple Negative Number', () {
+    test('Test - Multiple Negative Number', () {
       expect(
           getSumResult('-1,-2,-3'), 'negative numbers not allowed : -1,-2,-3');
     });
 
-    test('Test - Muplitple Negative Number with Multi line', () {
+    test('Test - Multiple Negative Number with Multi line', () {
       expect(getSumResult('-1\n-2,-3\n-4'),
           'negative numbers not allowed : -1,-2,-3,-4');
     });
