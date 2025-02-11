@@ -37,5 +37,9 @@ void main() {
     test('Test with Multi Line ', () {
       expect(getSumResult('1\n2'), 3);
     });
+
+    test('Test - combination of multiline with comma separation', () {
+      expect(getSumResult('1\n2,3\n4'), 10);
+    });
   });
 }
