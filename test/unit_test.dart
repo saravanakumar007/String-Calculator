@@ -16,5 +16,10 @@ void main() {
     test('Test - Empty String', () {
       expect(getSumResult(''), 0);
     });
+
+    test('Test - Format is correct or not', () {
+      expect(getSumResult('saran&2@kumar'),
+          "Please provide proper format to add numbers like 1,2 (or) 1\n2, 3");
+    });
   });
 }
