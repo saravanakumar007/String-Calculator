@@ -21,5 +21,9 @@ void main() {
       expect(getSumResult('saran&2@kumar'),
           "Please provide proper format to add numbers like 1,2 (or) 1\n2, 3");
     });
+
+    test('Test with Single Number', () {
+      expect(getSumResult('1'), 1);
+    });
   });
 }
