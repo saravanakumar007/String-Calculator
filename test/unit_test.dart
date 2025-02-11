@@ -41,5 +41,9 @@ void main() {
     test('Test - combination of multiline with comma separation', () {
       expect(getSumResult('1\n2,3\n4'), 10);
     });
+
+    test('Test - Single Negative Number', () {
+      expect(getSumResult('-1'), 'negative numbers not allowed : -1');
+    });
   });
 }
