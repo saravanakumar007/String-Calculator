@@ -29,5 +29,9 @@ void main() {
     test('Test with Two Numbers', () {
       expect(getSumResult('1,2'), 3);
     });
+
+    test('Test with multiple numbers', () {
+      expect(getSumResult('1,2,3,4,5'), 15);
+    });
   });
 }
