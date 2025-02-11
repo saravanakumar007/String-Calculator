@@ -45,5 +45,10 @@ void main() {
     test('Test - Single Negative Number', () {
       expect(getSumResult('-1'), 'negative numbers not allowed : -1');
     });
+
+    test('Test - Muplitple Negative Number', () {
+      expect(
+          getSumResult('-1,-2,-3'), 'negative numbers not allowed : -1,-2,-3');
+    });
   });
 }
